@@ -289,6 +289,61 @@
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                 </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                 <!-- Contact Info -->
+                 <div class="bg-card rounded-lg p-8 shadow-sm border">
+                    <h3 class="text-xl font-heading font-semibold text-foreground mb-6">
+                        Kontaktinformacija
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-muted-foreground">Talrunis</p>
+                                <a href="tel:+37129900528" class="text-foreground font-medium hover:text-primary transition-colors">
+                                    +371 299 00 528
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                <i data-lucide="mail" class="w-5 h-5 text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-muted-foreground">E-pasts</p>
+                                <a href="mailto:info@sanart.lv" class="text-foreground font-medium hover:text-primary transition-colors">
+                                    info@sanart.lv
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-muted-foreground">Adrese</p>
+                                <p class="text-foreground font-medium">Gaides iela 8, Valmiera</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Map -->
+                <div class="rounded-lg overflow-hidden shadow-sm border h-[400px]">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2146.846!2d25.4292!3d57.5387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTfCsDMyJzE5LjMiTiAyNcKwMjUnNDUuMSJF!5e0!3m2!1sen!2slv!4v1234567890"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
             </div>
         </div>
     </section>
