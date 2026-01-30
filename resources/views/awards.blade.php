@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
-@section('title', 'Apbalvojumi - SANART | Novertejums')
-@section('description', 'Musu darbs un sasniegumi ir noverteti ar dazadiem nozares apbalvojumiem un atzinibam.')
+@section('title', 'Apbalvojumi - SANART | Novērtējums')
+@section('description', 'Mūsu darbs un sasniegumi ir novērtēti ar dažādiem nozares apbalvojumiem un atzinībām.')
 
 @section('content')
     <!-- Hero Section -->
@@ -11,7 +11,7 @@
                 Apbalvojumi
             </h1>
             <p class="font-body text-xl md:text-2xl text-primary-foreground/90 lg:whitespace-nowrap">
-                Atziniba par musu darbu un sasniegumiem buvniecibas nozare.
+                Atzinība par mūsu darbu un sasniegumiem būvniecības nozarē.
             </p>
         </div>
     </section>

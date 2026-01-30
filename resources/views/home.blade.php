@@ -11,8 +11,8 @@
                 <img src="{{ asset('assets/hero-image-1.webp') }}" alt="Modern construction building exterior" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                 <div class="absolute bottom-16 md:bottom-24 left-8 md:left-[80px] lg:left-[120px] z-10">
-                    <h2 class="hero-title text-4xl md:text-6xl lg:text-[80px] mb-6 text-white font-heading font-bold">BUVNIECIBA</h2>
-                    <a href="{{ route('services') }}" class="inline-flex items-center justify-center bg-primary rounded-full w-[110px] h-[68px] transition-transform hover:scale-105" aria-label="Learn more about CONSTRUCTION">
+                    <h2 class="hero-title text-4xl md:text-6xl lg:text-[80px] mb-6 text-white font-heading font-bold animate-fade-up">BŪVNIECĪBA</h2>
+                    <a href="{{ route('services') }}" class="inline-flex items-center justify-center bg-primary rounded-full w-[110px] h-[68px] transition-transform hover:scale-105 animate-fade-up" style="animation-delay: 0.2s" aria-label="Learn more about CONSTRUCTION">
                         <i data-lucide="arrow-right" class="w-8 h-8 text-white"></i>
                     </a>
                 </div>
@@ -23,8 +23,8 @@
                 <img src="{{ asset('assets/hero-image-2.webp') }}" alt="Engineering networks pipes" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                 <div class="absolute bottom-16 md:bottom-24 left-8 md:left-[80px] lg:left-[120px] z-10">
-                     <h2 class="hero-title text-4xl md:text-6xl lg:text-[80px] mb-6 text-white font-heading font-bold">INZENIERTIKLI</h2>
-                     <a href="{{ route('services') }}" class="inline-flex items-center justify-center bg-secondary rounded-full w-[110px] h-[68px] transition-transform hover:scale-105" aria-label="Learn more about ENGINEERING NETWORKS">
+                    <h2 class="hero-title text-4xl md:text-6xl lg:text-[80px] mb-6 text-white font-heading font-bold animate-fade-up">INŽENIERTĪKLI</h2>
+                     <a href="{{ route('services') }}" class="inline-flex items-center justify-center bg-secondary rounded-full w-[110px] h-[68px] transition-transform hover:scale-105 animate-fade-up" style="animation-delay: 0.2s" aria-label="Learn more about ENGINEERING NETWORKS">
                         <i data-lucide="arrow-right" class="w-8 h-8 text-white"></i>
                     </a>
                 </div>
@@ -37,18 +37,18 @@
         <div class="max-w-[1440px] mx-auto px-8 lg:px-[120px]">
             <div class="flex flex-col md:flex-row gap-8 md:gap-16">
                 <!-- Label -->
-                <div class="flex items-start gap-4 md:w-[200px] flex-shrink-0">
+                <div class="flex items-start gap-4 md:w-[200px] flex-shrink-0 animate-fade-up">
                     <div class="w-4 h-4 bg-secondary rounded-full flex-shrink-0 mt-1 my-[6px]" aria-hidden="true"></div>
-                    <h3 class="font-body font-semibold text-xl text-foreground">Par uznemumu</h3>
+                    <h3 class="font-body font-semibold text-xl text-foreground">Par uzņēmumu</h3>
                 </div>
 
                 <!-- Content -->
                 <div class="flex flex-col gap-10 max-w-[720px]">
-                    <h2 id="about-heading" class="section-title text-3xl md:text-5xl lg:text-[64px] text-foreground">
-                        Pareiza izvele pareiziem risinajumiem
+                    <h2 id="about-heading" class="section-title text-3xl md:text-5xl lg:text-[64px] text-foreground animate-fade-up">
+                        Pareizā izvēle pareiziem risinājumiem
                     </h2>
-                    <p class="font-body text-lg md:text-xl text-foreground leading-relaxed">
-                        Mes esam uzkrajusi ilggadeju pieredzi, zinasanas un prasmes dazadu klientu projektu istenosana. Tapec esam profesionali sava joma un spejam izpildit dazadas klientu prasibas, nodrosinot visaugstakas kvalitates rezultatu.
+                    <p class="font-body text-lg md:text-xl text-foreground leading-relaxed animate-fade-up">
+                        Mēs esam uzkrājuši ilggadēju pieredzi, zināšanas un prasmes dažādu klientu projektu īstenošanā. Tāpēc esam profesionāļi savā jomā un spējam izpildīt dažādas klientu prasības, nodrošinot visaugstākās kvalitātes rezultātu.
                     </p>
                 </div>
             </div>
@@ -59,21 +59,21 @@
     <section class="w-full bg-muted pb-16 md:pb-24" aria-label="Company values">
         <div class="max-w-[1440px] mx-auto px-8 lg:px-[120px]">
             <div class="flex flex-col md:flex-row items-stretch border-t border-foreground">
-                <article class="flex items-center gap-6 py-6 pr-6 flex-1">
+                <article class="flex items-center gap-6 py-6 pr-6 flex-1 animate-fade-up">
                     <div class="w-[68px] h-[68px] bg-primary rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
                         <i data-lucide="check" class="w-8 h-8 text-white"></i>
                     </div>
-                    <h3 class="feature-title text-2xl md:text-[32px] text-foreground">ZINASANAS</h3>
+                    <h3 class="feature-title text-2xl md:text-[32px] text-foreground">ZINĀŠANAS</h3>
                 </article>
                 
-                <article class="flex items-center gap-6 py-6 pr-6 flex-1">
+                <article class="flex items-center gap-6 py-6 pr-6 flex-1 animate-fade-up" style="animation-delay: 0.1s">
                     <div class="w-[68px] h-[68px] bg-primary rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
                         <i data-lucide="check" class="w-8 h-8 text-white"></i>
                     </div>
                     <h3 class="feature-title text-2xl md:text-[32px] text-foreground">PIEREDZE</h3>
                 </article>
                 
-                <article class="flex items-center gap-6 py-6 pr-6 flex-1">
+                <article class="flex items-center gap-6 py-6 pr-6 flex-1 animate-fade-up" style="animation-delay: 0.2s">
                     <div class="w-[68px] h-[68px] bg-primary rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
                         <i data-lucide="check" class="w-8 h-8 text-white"></i>
                     </div>
@@ -88,14 +88,14 @@
         <div class="max-w-[1440px] mx-auto px-8 lg:px-[120px]">
             <!-- Section Header -->
             <div class="mb-16">
-                <div class="flex items-center gap-3 mb-4">
-                    <p class="text-primary font-heading font-semibold tracking-widest uppercase text-sm mb-3">Portfolio</p>
+                <div class="flex items-center gap-3 mb-4 animate-fade-up">
+                    <p class="text-primary font-heading font-semibold tracking-widest uppercase text-sm mb-3">Portfelis</p>
                 </div>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
-                    Aktualie objekti
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4 animate-fade-up">
+                    Aktuālie objekti
                 </h2>
-                <p class="text-muted-foreground max-w-xl text-base lg:text-lg">
-                    Pieredze un kvalitate, kas apliecinata prakse
+                <p class="text-muted-foreground max-w-xl text-base lg:text-lg animate-fade-up">
+                    Pieredze un kvalitāte, kas apliecināta praksē
                 </p>
             </div>
 
@@ -106,10 +106,10 @@
                     <img src="{{ asset('assets/projects/jaunstrukas.webp') }}" alt="Jaunstrukas" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
                     <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
                     <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Dzivojama eka</span>
+                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Dzīvojamā ēka</span>
                         <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Jaunstrukas</h3>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm text-background/80">Pilna cikla buvnieciba</span>
+                            <span class="text-sm text-background/80">Pilna cikla būvniecība</span>
                             <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -121,10 +121,10 @@
                     <img src="{{ asset('assets/projects/smiltenes-depo.webp') }}" alt="Smiltenes depo" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
                     <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
                     <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Industriala buve</span>
+                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Industriālā būve</span>
                         <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Smiltenes depo</h3>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm text-background/80">2 400 m</span>
+                            <span class="text-sm text-background/80">2 400 m²</span>
                             <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -136,8 +136,8 @@
                     <img src="{{ asset('assets/projects/valmiera-malu-iela.webp') }}" alt="Valmiera, Malu iela" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
                     <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
                     <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Dzivojama eka</span>
-                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Valmiera, Malu iela</h3>
+                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Dzīvojamā ēka</span>
+                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Valmiera, Mālu iela</h3>
                         <div class="flex items-center justify-between">
                             <span class="text-sm text-background/80">2023</span>
                             <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
@@ -151,8 +151,8 @@
                     <img src="{{ asset('assets/projects/valmieras-slimnica.webp') }}" alt="Valmieras slimnica" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
                     <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
                     <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Veselibas aprupe</span>
-                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Valmieras slimnica</h3>
+                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Veselības aprūpe</span>
+                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Valmieras slimnīca</h3>
                         <div class="flex items-center justify-between">
                             <span class="text-sm text-background/80">Siltumtrase</span>
                             <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
@@ -166,10 +166,10 @@
                     <img src="{{ asset('assets/projects/ropazu-vidusskola.webp') }}" alt="Ropazu vidusskola" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
                     <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
                     <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Izglitibas iestade</span>
-                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Ropazu vidusskola</h3>
+                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Izglītības iestāde</span>
+                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Ropažu vidusskola</h3>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm text-background/80">Apkures sistema</span>
+                            <span class="text-sm text-background/80">Apkures sistēma</span>
                             <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -181,10 +181,10 @@
                     <img src="{{ asset('assets/projects/raunas-vsk.webp') }}" alt="Raunas vidusskola" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
                     <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
                     <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Izglitibas iestade</span>
+                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Izglītības iestāde</span>
                         <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Raunas vidusskola</h3>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm text-background/80">Pilna cikla buvnieciba</span>
+                            <span class="text-sm text-background/80">Pilna cikla būvniecība</span>
                             <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -195,7 +195,7 @@
             <!-- View All Projects Link -->
             <div class="mt-12 text-center">
                 <a class="inline-flex items-center gap-2 text-foreground font-heading font-semibold hover:text-primary transition-colors duration-200 group" href="{{ route('projects') }}">
-                    Skatit visus projektus
+                    Skatīt visus projektus
                     <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                 </a>
             </div>
@@ -207,11 +207,11 @@
         <div class="max-w-[1440px] mx-auto px-8 lg:px-[120px]">
             <!-- Section Header -->
             <div class="mb-16">
-                <p class="text-primary font-heading font-semibold tracking-widest uppercase text-sm mb-3">
+                <p class="text-primary font-heading font-semibold tracking-widest uppercase text-sm mb-3 animate-fade-up">
                     Darba process
                 </p>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground max-w-2xl">
-                    No idejas lidz realizacijai
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground max-w-2xl animate-fade-up">
+                    No idejas līdz realizācijai
                 </h2>
             </div>
 
@@ -226,10 +226,10 @@
                     </div>
                     <div class="space-y-4">
                         <h3 class="text-xl lg:text-2xl font-heading font-bold text-foreground group-hover:text-primary transition-colors duration-300">
-                            Celtnieciba
+                            Celtniecība
                         </h3>
                         <p class="text-muted-foreground text-sm lg:text-base leading-relaxed">
-                            Vispareja celtnieciba ar pieredzi, kvalitati un sertificetiem specialistiem
+                            Vispārējā celtniecība ar pieredzi, kvalitāti un sertificētiem speciālistiem
                         </p>
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -244,10 +244,10 @@
                     </div>
                     <div class="space-y-4">
                         <h3 class="text-xl lg:text-2xl font-heading font-bold text-foreground group-hover:text-primary transition-colors duration-300">
-                            Udensapgade un kanalizacija
+                            Ūdensapgāde un kanalizācija
                         </h3>
                         <p class="text-muted-foreground text-sm lg:text-base leading-relaxed">
-                            Pilna cikla arejo un ieksejo udensapgades un kanalizacijas tiklu izbuve
+                            Pilna cikla ārējo un iekšējo ūdensapgādes un kanalizācijas tīklu izbūve
                         </p>
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -265,7 +265,7 @@
                             Apkure
                         </h3>
                         <p class="text-muted-foreground text-sm lg:text-base leading-relaxed">
-                            Siltumapgades un ventilacijas sistemu pilna cikla izbuve
+                            Siltumapgādes un ventilācijas sistēmu pilna cikla izbūve
                         </p>
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -283,7 +283,7 @@
                             Siltumtrases
                         </h3>
                         <p class="text-muted-foreground text-sm lg:text-base leading-relaxed">
-                            Arejo siltumtrasu izbuve no razotaja lidz pateretajam
+                            Ārējo siltumtrašu izbūve no ražotāja līdz patērētājam
                         </p>
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>

@@ -155,7 +155,7 @@
                                 'projects' => 'Pabeigtie objekti',
                                 'awards' => 'Apbalvojumi',
                                 'vacancies' => 'Vakances',
-                                'iso' => 'ISO sertifikati',
+                                'iso' => 'ISO sertifikāti',
                                 'contacts' => 'Kontakti',
                             ];
                         }
@@ -236,16 +236,16 @@
 
     <!-- Footer -->
     @php
-        $footerDesc = $locale === 'en' ? 'Professional construction and engineering network construction with many years of experience.' : 'Profesionala buvnieciba un inzeniertiklu izbuve ar ilggadeju pieredzi.';
-        $footerContact = $locale === 'en' ? 'Contact Information' : 'Kontaktinformacija';
-        $footerFollow = $locale === 'en' ? 'Follow Us' : 'Sekojiet mums';
-        $footerRights = $locale === 'en' ? 'All rights reserved.' : 'Visas tiesibas aizsargatas.';
-        $footerPrivacy = $locale === 'en' ? 'Privacy Policy' : 'Privatuma politika';
-        $footerPrivacyLink = $locale === 'en' ? route('en.privacy') : route('privacy');
+        $footerDesc = app()->getLocale() === 'en' ? 'Professional construction and engineering network construction with many years of experience.' : 'Profesionāla būvniecība un inženiertīklu izbūve ar ilggadēju pieredzi.';
+        $footerContact = app()->getLocale() === 'en' ? 'Contact Information' : 'Kontaktinformācija';
+        $footerFollow = app()->getLocale() === 'en' ? 'Follow Us' : 'Sekojiet mums';
+        $footerRights = app()->getLocale() === 'en' ? 'All rights reserved.' : 'Visas tiesības aizsargātas.';
+        $footerPrivacy = app()->getLocale() === 'en' ? 'Privacy Policy' : 'Privātuma politika';
+        $footerPrivacyLink = app()->getLocale() === 'en' ? route('en.privacy') : route('privacy');
     @endphp
     <footer id="kontakti" class="w-full bg-foreground text-background py-16">
         <div class="max-w-[1440px] mx-auto px-8 lg:px-[120px]">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-32">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-32">
                 <!-- Logo & Description -->
                 <div>
                     <img src="{{ asset('assets/logo.webp') }}" alt="SANART" class="h-10 mb-4 brightness-0 invert">

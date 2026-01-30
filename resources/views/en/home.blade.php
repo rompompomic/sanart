@@ -12,8 +12,8 @@
                 <img src="{{ asset('assets/hero-image-1.webp') }}" alt="Modern construction building exterior" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                 <div class="absolute bottom-16 md:bottom-24 left-8 md:left-[80px] lg:left-[120px] z-10">
-                    <h2 class="hero-title text-4xl md:text-6xl lg:text-[80px] mb-6 text-white font-heading font-bold">CONSTRUCTION</h2>
-                    <a href="{{ route('en.services') }}" class="inline-flex items-center justify-center bg-primary rounded-full w-[110px] h-[68px] transition-transform hover:scale-105" aria-label="Learn more about CONSTRUCTION">
+                    <h2 class="hero-title text-4xl md:text-6xl lg:text-[80px] mb-6 text-white font-heading font-bold animate-fade-up">CONSTRUCTION</h2>
+                    <a href="{{ route('en.services') }}" class="inline-flex items-center justify-center bg-primary rounded-full w-[110px] h-[68px] transition-transform hover:scale-105 animate-fade-up" style="animation-delay: 0.2s" aria-label="Learn more about CONSTRUCTION">
                         <i data-lucide="arrow-right" class="w-8 h-8 text-white"></i>
                     </a>
                 </div>
@@ -24,8 +24,8 @@
                 <img src="{{ asset('assets/hero-image-2.webp') }}" alt="Industrial engineering pipes and systems" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                 <div class="absolute bottom-16 md:bottom-24 left-8 md:left-[80px] lg:left-[120px] z-10">
-                    <h2 class="hero-title text-4xl md:text-6xl lg:text-[80px] mb-6 text-white font-heading font-bold">ENGINEERING NETWORKS</h2>
-                    <a href="{{ route('en.services') }}" class="inline-flex items-center justify-center bg-secondary rounded-full w-[110px] h-[68px] transition-transform hover:scale-105" aria-label="Learn more about ENGINEERING NETWORKS">
+                    <h2 class="hero-title text-4xl md:text-6xl lg:text-[80px] mb-6 text-white font-heading font-bold animate-fade-up">ENGINEERING NETWORKS</h2>
+                    <a href="{{ route('en.services') }}" class="inline-flex items-center justify-center bg-secondary rounded-full w-[110px] h-[68px] transition-transform hover:scale-105 animate-fade-up" style="animation-delay: 0.2s" aria-label="Learn more about ENGINEERING NETWORKS">
                         <i data-lucide="arrow-right" class="w-8 h-8 text-white"></i>
                     </a>
                 </div>
@@ -38,17 +38,17 @@
         <div class="max-w-[1440px] mx-auto px-8 lg:px-[120px]">
             <div class="flex flex-col md:flex-row gap-8 md:gap-16">
                 <!-- Label -->
-                <div class="flex items-start gap-4 md:w-[200px] flex-shrink-0">
+                <div class="flex items-start gap-4 md:w-[200px] flex-shrink-0 animate-fade-up">
                     <div class="w-4 h-4 bg-secondary rounded-full flex-shrink-0 mt-1 my-[6px]" aria-hidden="true"></div>
                     <h3 class="font-body font-semibold text-xl text-foreground">About Company</h3>
                 </div>
 
                 <!-- Content -->
                 <div class="flex flex-col gap-10 max-w-[720px]">
-                    <h2 id="about-heading" class="section-title text-3xl md:text-5xl lg:text-[64px] text-foreground">
+                    <h2 id="about-heading" class="section-title text-3xl md:text-5xl lg:text-[64px] text-foreground animate-fade-up">
                         The correct choice for the correct solutions
                     </h2>
-                    <p class="font-body text-lg md:text-xl text-foreground leading-relaxed">
+                    <p class="font-body text-lg md:text-xl text-foreground leading-relaxed animate-fade-up">
                         We have accumulated years of experience, knowledge, and skills in implementing various client projects. We are professionals in our field and able to meet various client requirements, ensuring the highest quality results.
                     </p>
                 </div>
@@ -60,21 +60,21 @@
     <section class="w-full bg-muted pb-16 md:pb-24" aria-label="Company values">
         <div class="max-w-[1440px] mx-auto px-8 lg:px-[120px]">
             <div class="flex flex-col md:flex-row items-stretch border-t border-foreground">
-                <article class="flex items-center gap-6 py-6 pr-6 flex-1">
+                <article class="flex items-center gap-6 py-6 pr-6 flex-1 animate-fade-up">
                     <div class="w-[68px] h-[68px] bg-primary rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
                         <i data-lucide="check" class="w-8 h-8 text-white"></i>
                     </div>
                     <h3 class="feature-title text-2xl md:text-[32px] text-foreground">KNOWLEDGE</h3>
                 </article>
                 
-                <article class="flex items-center gap-6 py-6 pr-6 flex-1">
+                <article class="flex items-center gap-6 py-6 pr-6 flex-1 animate-fade-up" style="animation-delay: 0.1s">
                     <div class="w-[68px] h-[68px] bg-primary rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
                         <i data-lucide="check" class="w-8 h-8 text-white"></i>
                     </div>
                     <h3 class="feature-title text-2xl md:text-[32px] text-foreground">EXPERIENCE</h3>
                 </article>
                 
-                <article class="flex items-center gap-6 py-6 pr-6 flex-1">
+                <article class="flex items-center gap-6 py-6 pr-6 flex-1 animate-fade-up" style="animation-delay: 0.2s">
                     <div class="w-[68px] h-[68px] bg-primary rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
                         <i data-lucide="check" class="w-8 h-8 text-white"></i>
                     </div>
@@ -89,13 +89,13 @@
         <div class="max-w-[1440px] mx-auto px-8 lg:px-[120px]">
             <!-- Section Header -->
             <div class="mb-16">
-                <div class="flex items-center gap-3 mb-4">
+                <div class="flex items-center gap-3 mb-4 animate-fade-up">
                     <p class="text-primary font-heading font-semibold tracking-widest uppercase text-sm mb-3">Portfolio</p>
                 </div>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4 animate-fade-up">
                     Current Projects
                 </h2>
-                <p class="text-muted-foreground max-w-xl text-base lg:text-lg">
+                <p class="text-muted-foreground max-w-xl text-base lg:text-lg animate-fade-up">
                     Experience and quality proven in practice
                 </p>
             </div>
@@ -208,10 +208,10 @@
         <div class="max-w-[1440px] mx-auto px-8 lg:px-[120px]">
             <!-- Section Header -->
             <div class="mb-16">
-                <p class="text-primary font-heading font-semibold tracking-widest uppercase text-sm mb-3">
+                <p class="text-primary font-heading font-semibold tracking-widest uppercase text-sm mb-3 animate-fade-up">
                     Work Process
                 </p>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground max-w-2xl">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground max-w-2xl animate-fade-up">
                     From Idea to Realization
                 </h2>
             </div>

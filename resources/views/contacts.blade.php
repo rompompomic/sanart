@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('title', 'Kontakti - SANART | Sazinies ar mums')
-@section('description', 'Sazinaties ar SIA SANART. Mūsu kontakti, adrese un rekvizīti. Gaidīsim Jūsu jautājumus un piedāvājumus.')
+@section('description', 'Sazinieties ar SIA SANART. Mūsu kontakti, adrese un rekvizīti. Gaidīsim Jūsu jautājumus un piedāvājumus.')
 
 @section('content')
     <!-- Hero Section -->

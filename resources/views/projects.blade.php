@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
-@section('title', 'Pabeigtie objekti - SANART | Musu pieredze')
-@section('description', 'Iepazistieties ar musu realizetajiem projektiem: daudzdzivoklu majas, industrialas buves, inzeniertikli un infrastrukturas objekti.')
+@section('title', 'Pabeigtie objekti - SANART | Mūsu pieredze')
+@section('description', 'Iepazīstieties ar mūsu realizētajiem projektiem: daudzdzīvokļu mājas, industriālās būves, inženiertīkli un infrastruktūras objekti.')
 
 @section('content')
     <!-- Hero Section -->
@@ -11,7 +11,7 @@
                 Pabeigtie objekti
             </h1>
             <p class="font-body text-xl md:text-2xl text-primary-foreground/90 lg:whitespace-nowrap">
-                Musu realizetie projekti ar foto albumiem
+                Mūsu realizētie projekti ar foto albumiem
             </p>
         </div>
     </section>

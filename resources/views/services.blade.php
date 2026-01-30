@@ -42,7 +42,6 @@
                                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-foreground">
                                     {{ $service->title_lv }}
                                 </h2>
-                                <p class="text-muted-foreground text-sm uppercase tracking-wider">{{ $service->subtitle_lv }}</p>
                             </div>
                         </div>
                         <p class="text-lg text-muted-foreground leading-relaxed">
