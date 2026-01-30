@@ -310,60 +310,92 @@
                 </h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                 <!-- Contact Info -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                 <!-- Contact Form -->
                  <div class="bg-card rounded-lg p-8 shadow-sm border">
                     <h3 class="text-xl font-heading font-semibold text-foreground mb-6">
-                        Kontaktinformacija
+                        Sazinieties ar mums
                     </h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                                <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
-                            </div>
-                            <div>
-                                <p class="text-sm text-muted-foreground">Talrunis</p>
-                                <a href="tel:+37129900528" class="text-foreground font-medium hover:text-primary transition-colors">
-                                    +371 299 00 528
-                                </a>
-                            </div>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-foreground mb-1">Kontaktpersona *</label>
+                            <input type="text" id="name" name="name" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="Jūsu vārds" required>
                         </div>
 
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                                <i data-lucide="mail" class="w-5 h-5 text-primary"></i>
-                            </div>
-                            <div>
-                                <p class="text-sm text-muted-foreground">E-pasts</p>
-                                <a href="mailto:info@sanart.lv" class="text-foreground font-medium hover:text-primary transition-colors">
-                                    info@sanart.lv
-                                </a>
-                            </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-foreground mb-1">Tālrunis *</label>
+                            <input type="tel" id="phone" name="phone" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="+371 XX XXX XXX" required>
                         </div>
 
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                                <i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-foreground mb-1">E-pasts *</label>
+                            <input type="email" id="email" name="email" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="jusu@epasts.lv" required>
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-foreground mb-1">Temats</label>
+                            <input type="text" id="subject" name="subject" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="Ziņas temats">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-foreground mb-1">Ziņas teksts</label>
+                            <textarea id="message" name="message" rows="5" class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="Jūsu ziņa..."></textarea>
+                        </div>
+
+                        <button type="submit" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                            Nosūtīt ziņu
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="flex flex-col h-full gap-8">
+                    <!-- Contact Details -->
+                    <div class="bg-card rounded-lg p-8 shadow-sm border">
+                        <h3 class="text-xl font-heading font-semibold text-foreground mb-6">
+                            Kontaktinformācija
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-muted-foreground">Tālrunis</p>
+                                    <a href="tel:+37129900528" class="text-foreground font-medium hover:text-primary transition-colors">
+                                        +371 299 00 528
+                                    </a>
+                                </div>
                             </div>
-                            <div>
-                                <p class="text-sm text-muted-foreground">Adrese</p>
-                                <p class="text-foreground font-medium">Gaides iela 8, Valmiera</p>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <i data-lucide="mail" class="w-5 h-5 text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-muted-foreground">E-pasts</p>
+                                    <a href="mailto:info@sanart.lv" class="text-foreground font-medium hover:text-primary transition-colors">
+                                        info@sanart.lv
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-muted-foreground">Adrese</p>
+                                    <p class="text-foreground font-medium">Gaides iela 8, Valmiera</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Map -->
-                <div class="rounded-lg overflow-hidden shadow-sm border h-[400px]">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2146.846!2d25.4292!3d57.5387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTfCsDMyJzE5LjMiTiAyNcKwMjUnNDUuMSJF!5e0!3m2!1sen!2slv!4v1234567890"
-                        width="100%"
-                        height="100%"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
+
+                    <!-- Map -->
+                    <div class="rounded-lg overflow-hidden shadow-sm border flex-1 min-h-[300px]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4284.66120170958!2d25.443287999999992!3d57.524843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ebeea17fd9a727%3A0x8320bacc2f5a04b3!2sLtd.%20Sanart!5e0!3m2!1slv!2slv!4v1769073384671!5m2!1slv!2slv" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
