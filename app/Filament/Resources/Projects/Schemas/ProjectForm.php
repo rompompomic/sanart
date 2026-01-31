@@ -78,7 +78,6 @@ class ProjectForm
                     ->options([
                         'completed' => 'Pabeigts (Completed)',
                         'in_process' => 'Procesa (In Process)',
-                        'planned' => 'Planots (Planned)',
                     ])
                     ->default('completed')
                     ->required(),
