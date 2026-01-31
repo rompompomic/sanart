@@ -340,5 +340,3 @@
         </div>
     </section>
 @endsection
-
-@endsection
