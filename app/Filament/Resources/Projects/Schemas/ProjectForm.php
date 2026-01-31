@@ -25,6 +25,10 @@ class ProjectForm
                                     ->live(onBlur: true)
                                     ->afterStateUpdated(fn ($state, callable $set) => $set('slug', \Illuminate\Support\Str::slug($state)))
                                     ->required(),
+                                TextInput::make('category_lv')
+                                    ->label('Kategorija (piem. Buvnieciba, Inzeniertikli)'),
+                                TextInput::make('size_lv')
+                                    ->label('Platiba/Apjoms'),
                                 Textarea::make('description_lv')
                                     ->label('Apraksts')
                                     ->rows(3)
@@ -41,6 +45,10 @@ class ProjectForm
                             ->schema([
                                 TextInput::make('title_en')
                                     ->label('Title (English)'),
+                                TextInput::make('category_en')
+                                    ->label('Category (English)'),
+                                TextInput::make('size_en')
+                                    ->label('Size (English)'),
                                 Textarea::make('description_en')
                                     ->label('Description (English)')
                                     ->rows(3)
@@ -64,9 +72,6 @@ class ProjectForm
                     ->label('URL Slug (Genereti automatiski)')
                     ->required()
                     ->unique(ignoreRecord: true),
-
-                TextInput::make('category')
-                    ->label('Kategorija (piem. Buvnieciba, Inzeniertikli)'),
                 
                 Select::make('status')
                     ->label('Statuss')
@@ -77,9 +82,6 @@ class ProjectForm
                     ])
                     ->default('completed')
                     ->required(),
-                
-                TextInput::make('size')
-                    ->label('Platiba/Apjoms'),
                 
                 FileUpload::make('main_image')
                     ->label('Galvenais attels')

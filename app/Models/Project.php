@@ -15,8 +15,8 @@ class Project extends Model
         'client_lv', 'client_en',
         'location_lv', 'location_en',
         'scope_lv', 'scope_en',
-        'category', 'status', 'year',
-        'size', 'main_image', 'gallery_images',
+        'category_lv', 'category_en', 'status', 'year',
+        'size_lv', 'size_en', 'main_image', 'gallery_images',
         'sort_order'
     ];
 

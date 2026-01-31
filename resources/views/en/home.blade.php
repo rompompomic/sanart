@@ -111,10 +111,10 @@
                     <img src="{{ asset('storage/' . $project->main_image) }}" alt="{{ $project->title_en ?? $project->title_lv }}" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
                     <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
                     <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">{{ $project->category ?? 'Project' }}</span>
+                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">{{ $project->category_en ?? $project->category_lv ?? 'Project' }}</span>
                         <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">{{ $project->title_en ?? $project->title_lv }}</h3>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm text-background/80">{{ $project->size }}</span>
+                            <span class="text-sm text-background/80">{{ \Illuminate\Support\Str::limit($project->description_en ?? $project->description_lv, 60) }}</span>
                             <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
