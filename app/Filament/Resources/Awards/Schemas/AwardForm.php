@@ -32,6 +32,7 @@ class AwardForm
                     ->image()
                     ->directory('awards')
                     ->disk('public')
+                    ->visibility('public')
                     ->helperText('Pienemtie formati: .jpg, .jpeg, .png, .webp. Maksimalais izmers: 10MB.')
                     ->maxSize(10240)
                     ->required(),

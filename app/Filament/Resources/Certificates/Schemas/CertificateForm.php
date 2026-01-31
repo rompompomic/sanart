@@ -34,6 +34,7 @@ class CertificateForm
                     ->image()
                     ->directory('certificates/previews')
                     ->disk('public')
+                    ->visibility('public')
                     ->helperText('Pienemtie formati: .jpg, .jpeg, .png, .webp. Maksimalais izmers: 10MB.')
                     ->maxSize(10240)
                     ->required(),
