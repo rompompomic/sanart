@@ -14,8 +14,11 @@ return new class extends Migration
         Schema::table('projects', function (Blueprint $table) {
             $table->renameColumn('category', 'category_lv');
             $table->renameColumn('size', 'size_lv');
-            $table->string('category_en')->nullable()->after('category');
-            $table->string('size_en')->nullable()->after('size');
+        });
+        
+        Schema::table('projects', function (Blueprint $table) {
+            $table->string('category_en')->nullable()->after('category_lv');
+            $table->string('size_en')->nullable()->after('size_lv');
         });
     }
 
