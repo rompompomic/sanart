@@ -82,7 +82,13 @@ Route::middleware(['web'])->group(function () {
         App::setLocale('lv');
         return $next($request);
     }], function () {
-        Route::get('/', function () { return view('home'); })->name('home');
+        Route::get('/', function () { 
+            return view('home', [
+                'currentProjects' => \App\Models\Project::where('status', 'in_process')
+                    ->orderBy('sort_order', 'asc')
+                    ->get()
+            ]); 
+        })->name('home');
         Route::get('/par-mums', function () { return view('about'); })->name('about');
         Route::get('/pakalpojumi', function () { 
             return view('services', [
@@ -91,7 +97,9 @@ Route::middleware(['web'])->group(function () {
         })->name('services');
         Route::get('/pabeigtie-objekti', function () { 
             return view('projects', [
-                'projects' => \App\Models\Project::orderBy('sort_order', 'asc')->get()
+                'projects' => \App\Models\Project::where('status', '!=', 'in_process')
+                    ->orderBy('sort_order', 'asc')
+                    ->get()
             ]); 
         })->name('projects');
         Route::get('/apbalvojumi', function () { 
@@ -131,7 +139,13 @@ Route::prefix('en')->middleware(['web'])->group(function () {
         App::setLocale('en');
         return $next($request);
     }], function () {
-        Route::get('/', function () { return view('en.home'); })->name('en.home'); // /en
+        Route::get('/', function () { 
+            return view('en.home', [
+                'currentProjects' => \App\Models\Project::where('status', 'in_process')
+                    ->orderBy('sort_order', 'asc')
+                    ->get()
+            ]); 
+        })->name('en.home'); // /en
         Route::get('/index.php', function () { return redirect()->route('en.home'); }); // Redirect legacy index.php
         
         Route::get('/about-us', function () { return view('en.about'); })->name('en.about');
@@ -142,7 +156,9 @@ Route::prefix('en')->middleware(['web'])->group(function () {
         })->name('en.services');
         Route::get('/projects', function () { 
             return view('en.projects', [
-                'projects' => \App\Models\Project::orderBy('sort_order', 'asc')->get()
+                'projects' => \App\Models\Project::where('status', '!=', 'in_process')
+                    ->orderBy('sort_order', 'asc')
+                    ->get()
             ]); 
         })->name('en.projects');
         Route::get('/awards', function () { 

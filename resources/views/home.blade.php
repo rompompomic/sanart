@@ -101,95 +101,31 @@
 
             <!-- Projects Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-                <!-- Project 1 -->
-                <article class="group relative overflow-hidden rounded-lg cursor-pointer aspect-[4/3]">
-                    <img src="{{ asset('assets/projects/jaunstrukas.webp') }}" alt="Jaunstrukas" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
+                @foreach($currentProjects as $project)
+                <a 
+                    data-fslightbox="gallery-{{ $project->id }}" 
+                    href="{{ asset('storage/' . $project->main_image) }}" 
+                    class="group relative overflow-hidden rounded-lg cursor-pointer aspect-[4/3] block"
+                >
+                    <img src="{{ asset('storage/' . $project->main_image) }}" alt="{{ $project->title_lv }}" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
                     <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
                     <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Dzīvojamā ēka</span>
-                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Jaunstrukas</h3>
+                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">{{ $project->category ?? 'Objekts' }}</span>
+                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">{{ $project->title_lv }}</h3>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm text-background/80">Pilna cikla būvniecība</span>
+                            <span class="text-sm text-background/80">{{ $project->size }}</span>
                             <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                     </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="group relative overflow-hidden rounded-lg cursor-pointer aspect-[4/3]">
-                    <img src="{{ asset('assets/projects/smiltenes-depo.webp') }}" alt="Smiltenes depo" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-                    <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Industriālā būve</span>
-                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Smiltenes depo</h3>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-background/80">2 400 m²</span>
-                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                    </div>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="group relative overflow-hidden rounded-lg cursor-pointer aspect-[4/3]">
-                    <img src="{{ asset('assets/projects/valmiera-malu-iela.webp') }}" alt="Valmiera, Malu iela" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-                    <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Dzīvojamā ēka</span>
-                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Valmiera, Mālu iela</h3>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-background/80">2023</span>
-                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                    </div>
-                </article>
-
-                <!-- Project 4 -->
-                <article class="group relative overflow-hidden rounded-lg cursor-pointer aspect-[4/3]">
-                    <img src="{{ asset('assets/projects/valmieras-slimnica.webp') }}" alt="Valmieras slimnica" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-                    <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Veselības aprūpe</span>
-                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Valmieras slimnīca</h3>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-background/80">Siltumtrase</span>
-                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                    </div>
-                </article>
-
-                <!-- Project 5 -->
-                <article class="group relative overflow-hidden rounded-lg cursor-pointer aspect-[4/3]">
-                    <img src="{{ asset('assets/projects/ropazu-vidusskola.webp') }}" alt="Ropazu vidusskola" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-                    <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Izglītības iestāde</span>
-                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Ropažu vidusskola</h3>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-background/80">Apkures sistēma</span>
-                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                    </div>
-                </article>
-
-                <!-- Project 6 -->
-                <article class="group relative overflow-hidden rounded-lg cursor-pointer aspect-[4/3]">
-                    <img src="{{ asset('assets/projects/raunas-vsk.webp') }}" alt="Raunas vidusskola" class="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105">
-                    <div class="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/70 transition-all duration-300 ease-out"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out">
-                        <span class="text-xs font-medium text-background/70 uppercase tracking-wider mb-2">Izglītības iestāde</span>
-                        <h3 class="text-xl lg:text-2xl font-heading font-bold text-background mb-1">Raunas vidusskola</h3>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-background/80">Pilna cikla būvniecība</span>
-                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-background/70"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                    </div>
-                </article>
+                </a>
+                
+                @if($project->gallery_images)
+                    @foreach($project->gallery_images as $image)
+                        <a data-fslightbox="gallery-{{ $project->id }}" href="{{ asset('storage/' . $image) }}" class="hidden"></a>
+                    @endforeach
+                @endif
+                @endforeach
             </div>
 
             <!-- View All Projects Link -->
@@ -401,3 +337,7 @@
         </div>
     </section>
 @endsection
+
+@push('scripts')
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.0.9/index.min.js'></script>
+@endpush
