@@ -87,7 +87,8 @@ class ProjectForm
                     ->label('Galvenais attels')
                     ->image()
                     ->directory('projects/main')
-                    ->disk('public')
+                    ->disk('public') // Explicitly use public disk
+                    ->visibility('public')
                     ->helperText('Pienemtie formati: .jpg, .jpeg, .png, .webp. Maksimalais izmers: 10MB.')
                     ->maxSize(10240)
                     ->columnSpanFull(),
@@ -97,7 +98,8 @@ class ProjectForm
                     ->image()
                     ->multiple()
                     ->directory('projects/gallery')
-                    ->disk('public')
+                    ->disk('public') // Explicitly use public disk
+                    ->visibility('public')
                     ->helperText('Pienemtie formati: .jpg, .jpeg, .png, .webp. Maksimalais izmers: 10MB.')
                     ->maxSize(10240)
                     ->columnSpanFull(),
