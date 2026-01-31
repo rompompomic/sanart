@@ -2,6 +2,7 @@
 
 @section('title', 'Contacts - SANART | Contact Us')
 @section('description', 'Contact SIA SANART. Our contacts, address and requisites. We look forward to your questions and offers.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

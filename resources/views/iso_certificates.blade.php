@@ -2,6 +2,7 @@
 
 @section('title', 'ISO Sertifikāti - SANART | Kvalitāte un vide')
 @section('description', 'Mūsu kvalitātes un vides pārvaldības sistēmas ir sertificētas atbilstoši ISO 9001 un ISO 14001 standartiem.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

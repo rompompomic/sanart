@@ -2,6 +2,7 @@
 
 @section('title', 'Completed Projects - SANART | Our Experience')
 @section('description', 'Get to know our realized projects: apartment buildings, industrial buildings, engineering networks and infrastructure objects.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

@@ -2,6 +2,7 @@
 
 @section('title', 'Pakalpojumi - SANART | Būvniecība un inženierkomunikācijas')
 @section('description', 'Piedāvājam plašu pakalpojumu klāstu: vispārējā celtniecība, ūdensapgāde un kanalizācija, apkures sistēmas, siltumtrases un projektu vadība.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

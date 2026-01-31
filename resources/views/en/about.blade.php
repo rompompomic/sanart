@@ -2,6 +2,7 @@
 
 @section('title', 'About Us - SANART | Experience and Quality')
 @section('description', 'Learn more about SIA SANART - a construction company with more than 15 years of experience. Our values, team and quality standards.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

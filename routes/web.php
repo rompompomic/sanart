@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Session;
 */
 
 // Locale Switcher Logic
+Route::get('/sitemap.xml', [\App\Http\Controllers\SitemapController::class, 'index']);
+
 Route::get('/locale/{lang}', function ($lang) {
     if (!in_array($lang, ['en', 'lv'])) {
         return redirect()->back();

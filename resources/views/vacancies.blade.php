@@ -2,6 +2,7 @@
 
 @section('title', 'Vakances - SANART | Pievienojies komandai')
 @section('description', 'Meklējam kolēģus! Aicinām pievienoties mūsu komandai projektu vadītājus, būvdarbu vadītājus un citus speciālistus.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

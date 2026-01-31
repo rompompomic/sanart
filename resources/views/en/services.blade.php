@@ -2,6 +2,7 @@
 
 @section('title', 'Services - SANART | Construction and Engineering')
 @section('description', 'We offer a wide range of services: general construction, water supply and sewerage, heating systems, heating networks, and project management.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

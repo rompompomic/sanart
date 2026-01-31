@@ -2,6 +2,7 @@
 
 @section('title', 'Kontakti - SANART | Sazinies ar mums')
 @section('description', 'Sazinieties ar SIA SANART. Mūsu kontakti, adrese un rekvizīti. Gaidīsim Jūsu jautājumus un piedāvājumus.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

@@ -1,7 +1,8 @@
 @extends('layouts.main')
 
 @section('title', 'Privātuma politika - SANART')
-@section('description', 'SIA SANART  privātuma politika. Informācija par personas datu apstrādi, drošību un datu subjektu tiesībām.')
+@section('description', 'SIA SANART privātuma politika. Informācija par personas datu apstrādi, drošību un datu subjektu tiesībām.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

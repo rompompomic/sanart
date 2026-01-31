@@ -2,6 +2,7 @@
 
 @section('title', 'Pabeigtie objekti - SANART | Mūsu pieredze')
 @section('description', 'Iepazīstieties ar mūsu realizētajiem projektiem: daudzdzīvokļu mājas, industriālās būves, inženiertīkli un infrastruktūras objekti.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

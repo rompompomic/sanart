@@ -2,6 +2,7 @@
 
 @section('title', 'Privacy Policy - SANART')
 @section('description', 'Privacy policy of SIA SANART. Information on personal data processing, security and data subject rights.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

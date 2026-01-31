@@ -2,6 +2,7 @@
 
 @section('title', 'ISO Certificates - SANART | Quality and Environment')
 @section('description', 'Our quality and environmental management systems are certified according to ISO 9001 and ISO 14001 standards.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

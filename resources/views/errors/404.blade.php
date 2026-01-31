@@ -2,6 +2,7 @@
 
 @section('title', '404 - ' . __('Page Not Found') . ' | SANART')
 @section('description', __('Sorry, the page you are looking for could not be found.') . ' ' . __('Return to Home'))
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <div class="flex min-h-[60vh] items-center justify-center bg-muted px-6 py-24">

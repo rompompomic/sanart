@@ -1,6 +1,8 @@
 @extends('layouts.main')
 
-@section('title', 'SANART - Buvnieciba un Inzeniertikli')
+@section('title', 'SANART - Būvniecība un Inženiertīkli | Pilna cikla pakalpojumi')
+@section('description', 'Profesionāls būvniecības uzņēmums ar vairāk nekā 15 gadu pieredzi. Piedāvājam pilna cikla būvniecību, inženiertīklu izbūvi un projektu vadību.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

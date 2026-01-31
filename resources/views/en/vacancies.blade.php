@@ -2,6 +2,7 @@
 
 @section('title', 'Vacancies - SANART | Join the Team')
 @section('description', 'We are looking for colleagues! We invite project managers, construction managers, and other specialists to join our team.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

@@ -2,6 +2,7 @@
 
 @section('title', $project->title_lv . ' - SANART')
 @section('description', \Illuminate\Support\Str::limit($project->description_lv, 160))
+@section('image', asset('storage/' . $project->main_image))
 
 @section('content')
     <!-- Hero Section -->

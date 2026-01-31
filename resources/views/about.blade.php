@@ -2,6 +2,7 @@
 
 @section('title', 'Par mums - SANART | Pieredze un kvalitāte')
 @section('description', 'Uzziniet vairāk par SIA SANART - būvniecības uzņēmumu ar vairāk nekā 15 gadu pieredzi. Mūsu vērtības, komanda un kvalitātes standarti.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

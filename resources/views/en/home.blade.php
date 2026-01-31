@@ -2,6 +2,7 @@
 
 @section('title', 'SANART - Construction and Engineering Networks | Home')
 @section('description', 'Reliable partner in construction and installation of engineering networks. We provide full-cycle services from design to realization.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

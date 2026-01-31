@@ -2,6 +2,7 @@
 
 @section('title', 'Partneri - SANART | Sadarbība')
 @section('description', 'Mūsu sadarbības partneri un piegādātāji. Kopā mēs nodrošinām augstākās kvalitātes pakalpojumus.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

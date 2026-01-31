@@ -2,6 +2,7 @@
 
 @section('title', ($project->title_en ?: $project->title_lv) . ' - SANART | Our Experience')
 @section('description', \Illuminate\Support\Str::limit($project->description_en ?: $project->description_lv, 160))
+@section('image', $project->gallery_images && count($project->gallery_images) > 0 ? asset('storage/' . $project->gallery_images[0]) : asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

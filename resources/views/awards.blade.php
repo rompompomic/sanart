@@ -2,6 +2,7 @@
 
 @section('title', 'Apbalvojumi - SANART | Novērtējums')
 @section('description', 'Mūsu darbs un sasniegumi ir novērtēti ar dažādiem nozares apbalvojumiem un atzinībām.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

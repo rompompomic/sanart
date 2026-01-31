@@ -2,6 +2,7 @@
 
 @section('title', 'Awards - SANART | Recognition')
 @section('description', 'Our work and achievements have been recognized with various industry awards and acknowledgments.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->

@@ -2,6 +2,7 @@
 
 @section('title', 'Partners - SANART | Cooperation')
 @section('description', 'Our cooperation partners and suppliers. Together we ensure the highest quality services.')
+@section('image', asset('assets/hero-image-1.webp'))
 
 @section('content')
     <!-- Hero Section -->
