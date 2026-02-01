@@ -62,7 +62,7 @@ class ServiceForm
                     ->image()
                     ->directory('services')
                     ->disk('public')
-                    ->helperText('Formāti: .jpg, .jpeg, .png, .webp. Maksimalais izmers: 10MB.')
+                    ->helperText('Formāti: .jpg, .jpeg, .png, .webp. Maksimālais izmērs: 10MB.')
                     ->maxSize(10240)
                     ->columnSpanFull(),
                 
@@ -71,7 +71,7 @@ class ServiceForm
                     ->acceptedFileTypes(['image/svg+xml'])
                     ->directory('services/icons')
                     ->disk('public')
-                    ->helperText('Formāti: .svg. Maksimalais izmers: 10MB.')
+                    ->helperText('Formāti: .svg. Maksimālais izmērs: 10MB.')
                     ->maxSize(10240)
                     ->columnSpanFull(),
 

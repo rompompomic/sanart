@@ -20,6 +20,12 @@ class ServiceResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
+    protected static ?string $navigationLabel = 'Pakalpojumi';
+
+    protected static ?string $modelLabel = 'pakalpojums';
+
+    protected static ?string $pluralModelLabel = 'pakalpojumi';
+
     protected static ?string $recordTitleAttribute = 'title_lv';
 
     public static function form(Schema $schema): Schema

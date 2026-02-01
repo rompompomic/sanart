@@ -222,21 +222,42 @@ function initContactForm() {
             
             // If valid, show success message and reset form
             if (isValid) {
-                // Here you would normally send the data to a server
-                console.log('Form data:', formData);
-                
-                // Show success message
-                if (successMessage) {
-                    successMessage.classList.remove('hidden');
-                    
-                    // Hide success message after 5 seconds
-                    setTimeout(() => {
-                        successMessage.classList.add('hidden');
-                    }, 5000);
-                }
-                
-                // Reset form
-                contactForm.reset();
+                // Get CSRF Token
+                const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+
+                fetch('/contact/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': csrfToken,
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(err => { throw err; });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Show success message
+                    if (successMessage) {
+                        successMessage.classList.remove('hidden');
+                        successMessage.textContent = currentLang === 'en' ? 'Message sent successfully!' : 'Ziņa veiksmīgi nosūtīta!';
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            successMessage.classList.add('hidden');
+                        }, 5000);
+                    }
+                    // Reset form
+                    contactForm.reset();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert(currentLang === 'en' ? 'Error sending message. Please try again later.' : 'Kļūda sūtot ziņu. Lūdzu mēģiniet vēlāk.');
+                });
             }
         });
     }
@@ -246,7 +267,15 @@ function initContactForm() {
 function showError(fieldId, message) {
     const field = document.getElementById(fieldId);
     if (field) {
-        const errorMsg = field.parentElement.querySelector('.error-message');
+        let errorMsg = field.parentElement.querySelector('.error-message');
+        
+        // Create error message element if it doesn't exist
+        if (!errorMsg) {
+            errorMsg = document.createElement('span');
+            errorMsg.className = 'error-message text-red-500 text-xs mt-1 block hidden';
+            field.parentElement.appendChild(errorMsg);
+        }
+
         if (errorMsg) {
             errorMsg.textContent = message;
             errorMsg.classList.remove('hidden');

@@ -9,5 +9,5 @@ class Certificate extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title_lv', 'title_en', 'image', 'sort_order'];
+    protected $fillable = ['title_lv', 'title_en', 'image', 'file_path', 'sort_order'];
 }

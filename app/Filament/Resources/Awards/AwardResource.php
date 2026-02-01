@@ -20,6 +20,12 @@ class AwardResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
+    protected static ?string $navigationLabel = 'Apbalvojumi';
+
+    protected static ?string $modelLabel = 'apbalvojums';
+
+    protected static ?string $pluralModelLabel = 'apbalvojumi';
+
     protected static ?string $recordTitleAttribute = 'title_lv';
 
     public static function form(Schema $schema): Schema

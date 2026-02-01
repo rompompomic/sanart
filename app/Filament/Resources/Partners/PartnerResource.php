@@ -20,6 +20,12 @@ class PartnerResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
+    protected static ?string $navigationLabel = 'Partneri';
+
+    protected static ?string $modelLabel = 'partneris';
+
+    protected static ?string $pluralModelLabel = 'partneri';
+
     protected static ?string $recordTitleAttribute = 'name';
 
     public static function form(Schema $schema): Schema

@@ -20,6 +20,12 @@ class CertificateResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
+    protected static ?string $navigationLabel = 'ISO sertifikāti';
+
+    protected static ?string $modelLabel = 'sertifikāts';
+
+    protected static ?string $pluralModelLabel = 'sertifikāti';
+
     protected static ?string $recordTitleAttribute = 'title_lv';
 
     public static function form(Schema $schema): Schema

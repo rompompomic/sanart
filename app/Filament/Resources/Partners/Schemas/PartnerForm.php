@@ -20,7 +20,7 @@ class PartnerForm
                     ->directory('partners')
                     ->disk('public')
                     ->visibility('public')
-                    ->helperText('Pienemtie formati: .jpg, .jpeg, .png, .webp. Maksimalais izmers: 10MB.')
+                    ->helperText('Pieņemtie formāti: .jpg, .jpeg, .png, .webp. Maksimālais izmērs: 10MB.')
                     ->maxSize(10240)
                     ->required(),
                 TextInput::make('sort_order')

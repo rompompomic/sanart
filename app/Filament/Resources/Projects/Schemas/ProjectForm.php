@@ -26,19 +26,19 @@ class ProjectForm
                                     ->afterStateUpdated(fn ($state, callable $set) => $set('slug', \Illuminate\Support\Str::slug($state)))
                                     ->required(),
                                 TextInput::make('category_lv')
-                                    ->label('Kategorija (piem. Buvnieciba, Inzeniertikli)'),
+                                    ->label('Kategorija (piem. Būvniecība, Inženiertīkli)'),
                                 TextInput::make('size_lv')
-                                    ->label('Platiba/Apjoms'),
+                                    ->label('Platība/Apjoms'),
                                 Textarea::make('description_lv')
                                     ->label('Apraksts')
                                     ->rows(3)
                                     ->columnSpanFull(),
                                 TextInput::make('location_lv')
-                                    ->label('Atrasanas vieta'),
+                                    ->label('Atrašanās vieta'),
                                 TextInput::make('client_lv')
-                                    ->label('Pasutitajs (Client)'),
+                                    ->label('Pasūtītājs'),
                                 Textarea::make('scope_lv')
-                                    ->label('Darbu apjoms (Scope of Work)')
+                                    ->label('Darbu apjoms')
                                     ->rows(2),
                             ]),
                         Tabs\Tab::make('English')
@@ -69,43 +69,37 @@ class ProjectForm
                     ->numeric(),
                 
                 TextInput::make('slug')
-                    ->label('URL Slug (Genereti automatiski)')
+                    ->label('URL Slug (Ģenerēti automātiski)')
                     ->required()
                     ->unique(ignoreRecord: true),
                 
-                Select::make('status')
-                    ->label('Statuss')
-                    ->options([
-                        'completed' => 'Pabeigts (Completed)',
-                        'in_process' => 'Procesa (In Process)',
-                    ])
-                    ->default('completed')
-                    ->required(),
-                
                 FileUpload::make('main_image')
-                    ->label('Galvenais attels')
+                    ->label('Galvenais attēls')
                     ->image()
                     ->directory('projects/main')
                     ->disk('public') // Explicitly use public disk
                     ->visibility('public')
-                    ->helperText('Pienemtie formati: .jpg, .jpeg, .png, .webp. Maksimalais izmers: 10MB.')
+                    ->helperText('Pieņemtie formāti: .jpg, .jpeg, .png, .webp. Maksimālais izmērs: 10MB.')
                     ->maxSize(10240)
                     ->columnSpanFull(),
                 
                 FileUpload::make('gallery_images')
-                    ->label('Galerijas atteli')
+                    ->label('Galerijas attēli')
                     ->image()
                     ->multiple()
                     ->directory('projects/gallery')
                     ->disk('public') // Explicitly use public disk
                     ->visibility('public')
-                    ->helperText('Pienemtie formati: .jpg, .jpeg, .png, .webp. Maksimalais izmers: 10MB.')
+                    ->helperText('Pieņemtie formāti: .jpg, .jpeg, .png, .webp. Maksimālais izmērs: 10MB.')
                     ->maxSize(10240)
                     ->columnSpanFull(),
 
                 TextInput::make('sort_order')
                     ->numeric()
                     ->default(0),
+
+                \Filament\Forms\Components\Hidden::make('status')
+                    ->default('completed'),
             ]);
     }
 }

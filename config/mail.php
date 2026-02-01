@@ -115,4 +115,17 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Contact Form Recipient Address
+    |--------------------------------------------------------------------------
+    |
+    | The email address where contact form submissions will be sent.
+    |
+    */
+
+    'contact' => [
+        'address' => env('MAIL_TO_ADDRESS', 'info@sanart.lv'),
+    ],
+
 ];

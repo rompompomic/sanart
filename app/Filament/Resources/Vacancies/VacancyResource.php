@@ -20,6 +20,12 @@ class VacancyResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
+    protected static ?string $navigationLabel = 'Vakances';
+
+    protected static ?string $modelLabel = 'vakance';
+
+    protected static ?string $pluralModelLabel = 'vakances';
+
     protected static ?string $recordTitleAttribute = 'position_lv';
 
     public static function form(Schema $schema): Schema

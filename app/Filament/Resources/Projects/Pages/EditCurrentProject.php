@@ -2,24 +2,24 @@
 
 namespace App\Filament\Resources\Projects\Pages;
 
-use App\Filament\Resources\Projects\ProjectResource;
-use Filament\Actions\DeleteAction;
+use App\Filament\Resources\Projects\CurrentProjectResource;
+use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditProject extends EditRecord
+class EditCurrentProject extends EditRecord
 {
-    protected static string $resource = ProjectResource::class;
+    protected static string $resource = CurrentProjectResource::class;
 
     protected function getHeaderActions(): array
     {
         return [
-            DeleteAction::make(),
+            Actions\DeleteAction::make(),
         ];
     }
 
     protected function mutateFormDataBeforeSave(array $data): array
     {
-        $data['status'] = 'completed';
+        $data['status'] = 'in_process';
         return $data;
     }
 }

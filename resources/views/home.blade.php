@@ -266,7 +266,7 @@
                     <h3 class="text-xl font-heading font-semibold text-foreground mb-6">
                         Sazinieties ar mums
                     </h3>
-                    <form class="space-y-4">
+                    <form id="contact-form" class="space-y-4">
                         <div>
                             <label for="name" class="block text-sm font-medium text-foreground mb-1">Kontaktpersona *</label>
                             <input type="text" id="name" name="name" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="Jūsu vārds" required>
@@ -296,6 +296,10 @@
                             Nosūtīt ziņu
                         </button>
                     </form>
+                    <!-- Success Message Holder -->
+                    <div id="success-message" class="hidden mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-md">
+                        <strong>Ziņa nosūtīta!</strong> Mēs ar Jums sazināsimies tuvākajā laikā.
+                    </div>
                 </div>
 
                 <!-- Contact Info & Map -->

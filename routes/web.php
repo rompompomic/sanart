@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Session;
 */
 
 // Locale Switcher Logic
+// Contact Form Route
+Route::post('/contact/submit', [\App\Http\Controllers\ContactController::class, 'submit'])->name('contact.submit');
+
 Route::get('/sitemap.xml', [\App\Http\Controllers\SitemapController::class, 'index']);
 
 Route::get('/locale/{lang}', function ($lang) {

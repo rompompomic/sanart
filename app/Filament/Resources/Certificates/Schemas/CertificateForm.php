@@ -30,14 +30,23 @@ class CertificateForm
                     ->columnSpanFull(),
 
                 FileUpload::make('image')
-                    ->label('Prieksskatijuma Attels (Preview)')
+                    ->label('Priekšskatījuma Attēls (Preview)')
                     ->image()
                     ->directory('certificates/previews')
                     ->disk('public')
                     ->visibility('public')
-                    ->helperText('Pienemtie formati: .jpg, .jpeg, .png, .webp. Maksimalais izmers: 10MB.')
+                    ->helperText('Pieņemtie formāti: .jpg, .jpeg, .png, .webp. Maksimālais izmērs: 10MB.')
                     ->maxSize(10240)
                     ->required(),
+
+                FileUpload::make('file_path')
+                    ->label('Sertifikāta fails (PDF)')
+                    ->acceptedFileTypes(['application/pdf'])
+                    ->directory('certificates/files')
+                    ->disk('public')
+                    ->visibility('public')
+                    ->helperText('Formāts: .pdf. Ja nav pievienots, tiks atvērts attēls.')
+                    ->maxSize(10240),
 
                 TextInput::make('sort_order')
                     ->numeric()

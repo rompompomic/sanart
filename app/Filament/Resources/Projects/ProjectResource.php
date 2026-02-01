@@ -20,7 +20,20 @@ class ProjectResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
+    protected static ?string $navigationLabel = 'Pabeigtie objekti';
+
+    protected static ?int $navigationSort = 1;
+
+    protected static ?string $modelLabel = 'pabeigts objekts';
+
+    protected static ?string $pluralModelLabel = 'pabeigtie objekti';
+
     protected static ?string $recordTitleAttribute = 'title_lv';
+
+    public static function getEloquentQuery(): \Illuminate\Database\Eloquent\Builder
+    {
+        return parent::getEloquentQuery()->where('status', 'completed');
+    }
 
     public static function form(Schema $schema): Schema
     {
