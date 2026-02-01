@@ -76,7 +76,7 @@ class ServiceForm
                     ->columnSpanFull(),
 
                 TextInput::make('sort_order')
-                    ->label('Secība')
+                    ->label('Kārtošanas secība')
                     ->numeric()
                     ->default(0),
             ]);

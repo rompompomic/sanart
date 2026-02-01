@@ -29,7 +29,7 @@ class ServicesTable
                     ->label('Attēls')
                     ->disk('public'),
                 TextColumn::make('sort_order')
-                    ->label('Secība')
+                    ->label('Kārtošanas secība')
                     ->numeric()
                     ->sortable(),
                 TextColumn::make('created_at')

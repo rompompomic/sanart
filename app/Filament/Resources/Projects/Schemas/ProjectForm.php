@@ -95,6 +95,7 @@ class ProjectForm
                     ->columnSpanFull(),
 
                 TextInput::make('sort_order')
+                    ->label('Kārtošanas secība')
                     ->numeric()
                     ->default(0),
 

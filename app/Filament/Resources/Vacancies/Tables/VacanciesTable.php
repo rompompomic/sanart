@@ -22,6 +22,7 @@ class VacanciesTable
                 IconColumn::make('is_active')
                     ->boolean(),
                 TextColumn::make('sort_order')
+                    ->label('Kārtošanas secība')
                     ->numeric()
                     ->sortable(),
                 TextColumn::make('created_at')

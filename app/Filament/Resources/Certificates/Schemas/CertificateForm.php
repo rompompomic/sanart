@@ -49,6 +49,7 @@ class CertificateForm
                     ->maxSize(10240),
 
                 TextInput::make('sort_order')
+                    ->label('Kārtošanas secība')
                     ->numeric()
                     ->default(0),
             ]);

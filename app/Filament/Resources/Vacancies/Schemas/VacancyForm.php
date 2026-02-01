@@ -88,7 +88,7 @@ class VacancyForm
                     ->default(true),
                     
                 TextInput::make('sort_order')
-                    ->label('Secība')
+                    ->label('Kārtošanas secība')
                     ->numeric()
                     ->default(0),
             ]);

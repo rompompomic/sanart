@@ -24,6 +24,7 @@ class PartnerForm
                     ->maxSize(10240)
                     ->required(),
                 TextInput::make('sort_order')
+                    ->label('Kārtošanas secība')
                     ->numeric()
                     ->default(0),
             ]);

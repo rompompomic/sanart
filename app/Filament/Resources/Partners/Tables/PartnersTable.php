@@ -20,6 +20,7 @@ class PartnersTable
                 ImageColumn::make('logo')
                     ->disk('public'),
                 TextColumn::make('sort_order')
+                    ->label('Kārtošanas secība')
                     ->numeric()
                     ->sortable(),
                 TextColumn::make('created_at')
