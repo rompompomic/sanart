@@ -8,4 +8,6 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateVacancy extends CreateRecord
 {
     protected static string $resource = VacancyResource::class;
+
+    protected static ?string $title = 'Jauna vakance';
 }
